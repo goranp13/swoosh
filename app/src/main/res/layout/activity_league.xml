@@ -41,26 +41,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" android:id="@+id/toggleButton"
+                app:layout_constraintEnd_toEndOf="parent" android:id="@+id/btnMensLeague"
                 app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.348"
                 android:textOff="@string/mens" android:textOn="@string/mens" android:textColor="@android:color/white"
                 android:fontFamily="@font/montserrat" android:background="@drawable/swoosh_toggle"
-                android:textStyle="bold" android:textSize="18sp"/>
+                android:textStyle="bold" android:textSize="18sp" android:onClick="onMensClicked"/>
         <ToggleButton
                 android:text="@string/womens"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton2" android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content" android:id="@+id/btnWomansLeague"
+                android:layout_marginBottom="16dp"
                 android:layout_marginTop="16dp" android:textSize="18sp" android:fontFamily="@font/montserrat"
                 android:textStyle="bold" android:background="@drawable/swoosh_toggle" android:textOff="@string/womens"
-                android:textOn="@string/womens" android:textColor="@android:color/white"/>
+                android:textOn="@string/womens" android:textColor="@android:color/white"
+                android:onClick="onWomansClicked"/>
         <ToggleButton
                 android:text="@string/co_ed"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton3" android:textSize="18sp"
+                android:layout_height="wrap_content" android:id="@+id/btnCoedLeague" android:textSize="18sp"
                 android:fontFamily="@font/montserrat" android:textStyle="bold"
                 android:background="@drawable/swoosh_toggle" android:textOff="@string/co_ed"
                 android:textOn="@string/co_ed"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/white" android:onClick="onCoedsClicked"/>
     </LinearLayout>
     <Button
             android:text="@string/next"
